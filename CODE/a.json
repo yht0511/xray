@@ -1,0 +1,144 @@
+[
+    {
+        "id": "37878d541d174607bd642ab44c3a1f19",
+        "description": "个人博客",
+        "image": "yht0511/tclab_image:v1",
+        "network_mode": "bridge",
+        "ports": {
+            "80": 1080
+        },
+        "privileged": null,
+        "init_cmd": [
+            "/bin/bash -c 'unset http_proxy;unset https_proxy;unset HTTP_PROXY;unset HTTPS_PROXY'",
+            "/bin/bash -c 'cd /root && (nohup python /root/__init__.py > /dev/null &)'"
+        ],
+        "restart_policy": {
+            "Name": "always"
+        },
+        "power": true,
+        "create_time": 1690855725.7094474
+    },
+    {
+        "id": "71d963d7db254bc083ff821a07a42815",
+        "description": "FRP服务",
+        "image": "yht0511/tclab_image:v1",
+        "network_mode": "host",
+        "ports": null,
+        "privileged": null,
+        "init_cmd": [
+            "/bin/bash -c 'unset http_proxy;unset https_proxy;unset HTTP_PROXY;unset HTTPS_PROXY'",
+            "/bin/bash -c 'cd /root && (nohup python /root/__init__.py > /dev/null &)'"
+        ],
+        "restart_policy": {
+            "Name": "always"
+        },
+        "power": true,
+        "create_time": 1690857024.2990885
+    },
+    {
+        "id": "ec97e0ada12248f5a7399e6d07e2eefd",
+        "description": "Cloudflared服务",
+        "image": "yht0511/tclab_image:v1",
+        "network_mode": "host",
+        "ports": null,
+        "privileged": null,
+        "init_cmd": [
+            "/bin/bash -c 'unset http_proxy;unset https_proxy;unset HTTP_PROXY;unset HTTPS_PROXY'",
+            "/bin/bash -c 'service cloudflared start'"
+        ],
+        "restart_policy": {
+            "Name": "always"
+        },
+        "power": true,
+        "create_time": 1690857795.414748
+    },
+    {
+        "id": "043b3fb2c8704a23982908350396fdf3",
+        "description": "导航设备扫描服务器",
+        "image": "yht0511/tclab_image:v1",
+        "network_mode": "bridge",
+        "ports": {
+            "80": 2080
+        },
+        "privileged": null,
+        "init_cmd": [
+            "/bin/bash -c 'unset http_proxy;unset https_proxy;unset HTTP_PROXY;unset HTTPS_PROXY'",
+            "/bin/bash -c 'cd /root && (nohup node /root/server.js > /dev/null &)'"
+        ],
+        "restart_policy": {
+            "Name": "always"
+        },
+        "power": true,
+        "create_time": 1690858700.456441
+    },
+    {
+        "id": "4699ef8a90de43b2804d72d0f47ba977",
+        "description": "QQ机器人",
+        "image": "yht0511/tclab_image:v1",
+        "network_mode": "bridge",
+        "ports": null,
+        "privileged": null,
+        "init_cmd": [
+            "/bin/bash -c 'unset http_proxy;unset https_proxy;unset HTTP_PROXY;unset HTTPS_PROXY'",
+            "/bin/bash -c 'cd /root && (nohup python /root/main.py > /root/log.txt &)'"
+        ],
+        "restart_policy": {
+            "Name": "always"
+        },
+        "power": true,
+        "create_time": 1690861499.7121208
+    },
+    {
+        "id": "8f1edf0cb0ff4e3a8c943ed1c83af3a5",
+        "description": "植提刷新程序",
+        "image": "yht0511/tclab_image:v1",
+        "network_mode": "bridge",
+        "ports": null,
+        "privileged": null,
+        "init_cmd": [
+            "/bin/bash -c 'unset http_proxy;unset https_proxy;unset HTTP_PROXY;unset HTTPS_PROXY'",
+            "/bin/bash -c 'cd /root && (nohup python /root/__init__.py > /dev/null &)'"
+        ],
+        "restart_policy": {
+            "Name": "always"
+        },
+        "power": true,
+        "create_time": 1691493532.369278
+    },
+    {
+        "id": "167ac8e397bf43ceae1663541c4c94aa",
+        "description": "Prescription Generator",
+        "image": "yht0511/tclab_image:v1",
+        "network_mode": "host",
+        "ports": null,
+        "privileged": null,
+        "init_cmd": [
+            "/bin/bash -c 'unset http_proxy;unset https_proxy;unset HTTP_PROXY;unset HTTPS_PROXY'",
+            "/bin/bash -c 'cd /root && (nohup python /root/__init__.py > /dev/null &)'"
+        ],
+        "restart_policy": {
+            "Name": "always"
+        },
+        "power": true,
+        "create_time": 1693994931.063242
+    },
+    {
+        "id": "455f3cd94044",
+        "description": "OnlineCourses",
+        "image": "ubuntu:latest",
+        "network_mode": "bridge",
+        "ports": {
+            "80": 4080
+        },
+        "privileged": null,
+        "init_cmd": [
+            "/bin/bash -c 'unset http_proxy;unset https_proxy;unset HTTP_PROXY;unset HTTPS_PROXY'",
+            "/bin/bash -c 'cd /root && (nohup python3 /root/main.py > /dev/null &)'"
+        ],
+        "restart_policy": {
+            "Name": "always"
+        },
+        "power": true,
+        "create_time": 1693994931.063242
+    }
+]
