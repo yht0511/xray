@@ -1,6 +1,7 @@
 {
   "title": "X射线项目",
   "name": "XRAY",
+  "description": "驱动X射线管并构建简易三维扫描装置.",
   "progress": 0,
   "status": "开发",
   "image": "https://raw.githubusercontent.com/yht0511/ImgStorage/main/2024/12/0820241208183330.jpeg",
