@@ -1,0 +1,12 @@
+{
+  "title": "X射线项目",
+  "name": "XRAY",
+  "progress": 0,
+  "status": "开发",
+  "image": "https://raw.githubusercontent.com/yht0511/ImgStorage/main/2024/12/0820241208183330.jpeg",
+  "project_manager": {
+    "version": 1,
+    "sync": true,
+    "auto_analyze_progress": true
+  }
+}
